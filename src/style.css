@@ -1,0 +1,28 @@
+.navbar-config{
+    padding-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+}
+
+.github-logo {
+    will-change: filter;
+    transition: filter 300ms;
+    width: 80px;
+    height: 80px;
+}
+
+.github-bg {
+    width: 80px;
+    height: 80px;
+    border: 0 solid;
+    border-radius: 100%;
+    background-color: #ffffff;
+}
+
+.github-logo:hover {
+    filter: drop-shadow(0 0 3em #ffffff);
+}
+
+
