@@ -1,9 +1,13 @@
 .navbar-config{
+    background-color: var(--navbar-bg-color);
+    width: auto;
+    border-radius: 12px;
     padding-bottom: 18px;
     display: flex;
     justify-content: space-between;
     padding: 8px;
     align-items: center;
+    z-index: 1;
 }
 
 .github-logo {
@@ -22,7 +26,72 @@
 }
 
 .github-logo:hover {
-    filter: drop-shadow(0 0 3em #ffffff);
+    filter: var(--git-color-hover);
 }
+
+.display-f {
+    display: flex;
+    align-items: center;
+}
+
+.display-f button {
+    width: auto;
+    height: 40px;
+    margin-right: 24px;
+}
+
+.theme-toggle-button {
+  background-color: var(--icon-bg-color);
+  position: relative;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* Estado base */
+.slide-in-left {
+  transform: translateX(-32px);
+  opacity: 0;
+}
+
+.slide-in-right {
+  transform: translateX(32px);
+  opacity: 0;
+}
+
+.slide-out-left {
+  transform: translateX(-32px);
+  opacity: 0;
+}
+
+.slide-out-right {
+  transform: translateX(32px);
+  opacity: 0;
+}
+
+/* Estado final visível */
+.icon-sun.slide-in-left,
+.icon-moon.slide-in-right {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
+
 
 

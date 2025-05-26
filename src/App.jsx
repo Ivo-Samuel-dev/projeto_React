@@ -38,13 +38,11 @@ function App() {
 
 
       <div className="card">
-        <button onClick={toggleTheme}>
+        {/* <button onClick={toggleTheme}>
           Alternar para tema {theme === 'dark' ? 'claro' : 'escuro'}
-        </button>
+        </button> */}
+        <p>Feito por: Ivo Samuel</p>
       </div>
-      <p className="read-the-docs">
-        Feito por: <b>Ivo Samuel</b>
-      </p>
     </>
   );
 }

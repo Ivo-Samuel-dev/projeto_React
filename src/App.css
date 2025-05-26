@@ -1,31 +1,36 @@
 #root {
-  --bg-color: #ffffff;
-  --text-color: #000000;
-  --border-color: #000000;  /* Cor da borda no tema escuro */
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
-
-[data-theme='dark'] {
-  --bg-color: #121212;
-  --text-color: #ffffff;
- --border-color: #ffffff;  /* Cor da borda no tema escuro */
-}
-
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  --border-color: #000000;
+  border: 2px solid var(--border-color);
   transition: background-color 0.3s ease, color 0.3s ease;
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
 }
 
+button {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.3s ease;
+}
 
+button:hover {
+  border-color: #646cff;
+}
 
 .corpo {
   display: flex;
@@ -103,9 +108,7 @@ body {
   justify-content: center;
   max-width: 480px;
 }
-.card {
-  padding: 1em;
-}
+
 .vitrine-react {
   margin-left: 0px;
 }
